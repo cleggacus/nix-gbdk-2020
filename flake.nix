@@ -55,7 +55,8 @@
       };
     };
 
-    # ✅ Dev shell to test the overlay
+    packages.${system}.default = pkgs.gbdk-2020;
+
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = [ pkgs.gbdk-2020 ];
       shellHook = ''
